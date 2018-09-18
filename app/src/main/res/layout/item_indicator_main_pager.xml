@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mTextView"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:gravity="bottom|center_horizontal"
+    android:paddingBottom="7dp"
+    android:paddingTop="7dp"
+    android:textColor="@color/text_indicator_main"
+    android:textSize="10dp"
+    tools:drawableTop="@drawable/ic_main_asset"
+    tools:text="资产">
+
+</TextView>

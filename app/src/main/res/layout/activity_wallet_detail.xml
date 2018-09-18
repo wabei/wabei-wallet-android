@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.WalletDetailActivity">
+
+    <include layout="@layout/cell_appbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_btn_wallet"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="22dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_bitcoin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mWalletNameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    tools:text="Wallet1" />
+
+                <TextView
+                    android:id="@+id/mAddressTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    tools:text="6ef1fb74-4fe8-4576-9f79-63ded" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/divider_wallet_inner" />
+
+        <TextView
+            android:id="@+id/mBalanceTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="14dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="14dp"
+            android:gravity="end"
+            android:textColor="#FFFFFF"
+            tools:text="999.00WAB" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_horizontial"
+            android:dividerPadding="14dp"
+            android:orientation="vertical"
+            android:showDividers="middle|end">
+
+            <TextView
+                android:id="@+id/mChangeToDefaultBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:gravity="center_vertical"
+                android:paddingEnd="14dp"
+                android:paddingStart="14dp"
+                android:text="设为默认钱包"
+                android:textColor="@color/text_wallet_detail_display_item" />
+
+            <TextView
+                android:id="@+id/mUpdateWalletNameBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:gravity="center_vertical"
+                android:paddingEnd="14dp"
+                android:paddingStart="14dp"
+                android:text="修改钱包名称"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/mUpdatePasswordBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:gravity="center_vertical"
+                android:paddingEnd="14dp"
+                android:paddingStart="14dp"
+                android:text="修改密码"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/mPromptBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:gravity="center_vertical"
+                android:paddingEnd="14dp"
+                android:paddingStart="14dp"
+                android:text="提示信息"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/mExportPriKeyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:gravity="center_vertical"
+                android:paddingEnd="14dp"
+                android:paddingStart="14dp"
+                android:text="导出私钥"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/mExportKeystoreBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:gravity="center_vertical"
+                android:paddingEnd="14dp"
+                android:paddingStart="14dp"
+                android:text="导出Keystore"
+                android:textColor="#333333" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:paddingBottom="10dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp">
+
+        <FrameLayout
+            android:id="@+id/mRemoveWalletBtn"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_pay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:text="删除钱包"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/mExportMnemonicBtn"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_gathering">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:text="备份助记词"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

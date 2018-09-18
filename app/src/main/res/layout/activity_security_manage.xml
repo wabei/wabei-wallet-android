@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.SecurityManageActivity">
+
+    <include layout="@layout/cell_appbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:divider="@drawable/divider_horizontial"
+        android:dividerPadding="14dp"
+        android:orientation="vertical"
+        android:showDividers="middle|end">
+
+        <TextView
+            android:id="@+id/mSetGesturePasswordBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:gravity="center_vertical"
+            android:paddingEnd="14dp"
+            android:paddingStart="14dp"
+            android:text="设置手势密码"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/mClearGesturePasswordBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:gravity="center_vertical"
+            android:paddingEnd="14dp"
+            android:paddingStart="14dp"
+            android:text="清除手势密码"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/mUpdateGesturePasswordBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:gravity="center_vertical"
+            android:paddingEnd="14dp"
+            android:paddingStart="14dp"
+            android:text="修改手势密码"
+            android:textColor="#333333" />
+    </LinearLayout>
+</LinearLayout>

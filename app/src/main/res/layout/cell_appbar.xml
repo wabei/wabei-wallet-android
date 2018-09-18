@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/appbar_height"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:onClick="onBack"
+        android:id="@+id/mBackBtn"
+        android:layout_width="@dimen/appbar_height"
+        android:layout_height="@dimen/appbar_height"
+        android:scaleType="center"
+        android:src="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/mTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Token-S"
+        android:textColor="@color/primary_title_font"
+        android:textSize="20sp" />
+</FrameLayout>

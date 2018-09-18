@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.bitwa.wallet">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".WabeiApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".view.activity.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.activity.WalletInitActivity" />
+        <activity android:name=".view.activity.WalletImportActivity" />
+        <activity android:name=".view.activity.SuccessActivity" />
+        <activity android:name=".view.activity.MainActivity" />
+        <activity android:name=".view.activity.WalletCreateActivity" />
+        <activity android:name=".view.activity.AssetDetailActivity" />
+        <activity android:name=".view.activity.PaymentActivity" />
+        <activity android:name=".view.activity.TransDetailActivity" />
+        <activity android:name=".view.activity.ReceiptActivity" />
+        <activity android:name=".view.activity.WalletManageActivity" />
+        <activity android:name=".view.activity.WalletDetailActivity" />
+        <activity android:name=".view.activity.SecurityManageActivity"></activity>
+    </application>
+
+</manifest>

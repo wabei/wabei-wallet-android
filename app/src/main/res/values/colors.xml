@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF47B3DF</color>
+    <color name="colorPrimaryDark">#47B3DF</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPrimaryDisable">#7747B3DF</color>
+
+    <color name="main_background">#FFFFFF</color>
+    <color name="main_background_2">#EFEFF4</color>
+    <color name="primary_title_font">#FFFFFF</color>
+
+    <color name="wallet_init_btn_bg">#FF8B6C</color>
+    <color name="wallet_init_btn_font">#FFFFFF</color>
+    <color name="primary_btn_font">#FFFFFF</color>
+
+    <color name="primary_divider_bg">#DDDDDD</color>
+
+    <color name="wallet_import_mnemonic_input_mnemonic_hint">#999999</color>
+</resources>
