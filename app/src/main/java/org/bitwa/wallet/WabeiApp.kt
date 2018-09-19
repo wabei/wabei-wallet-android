@@ -77,7 +77,7 @@ class WabeiApp : Application() {
         get() = this.getSharedPreferences("Config", android.content.Context.MODE_PRIVATE)
 
     companion object {
-        private const val url = "http://140.143.209.98:8899" //瓦贝公链
+        private const val url = "http://132.232.53.82:8899" //瓦贝公链
         //        private const val url = "https://rinkeby.infura.io/wpvAXa1yEbMp8efQT1CR" // 测试链infura
 
         val web3j: Web3j by lazy { Web3jFactory.build(HttpService(url)) }
